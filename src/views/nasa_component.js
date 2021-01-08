@@ -1,11 +1,14 @@
 import React from 'react';
+import NasaPhoto from './nasa_photo.js';
 
-const Nasa = () => {
+const Nasa = (props) => {
     return(
         <div> 
-           Nasa Component 
+           Nasa Component
+           <NasaPhoto nasaImg={props.nasaImg} /> 
         </div>
     )
+
 }
 
 
