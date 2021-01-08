@@ -1,18 +1,13 @@
 import React from 'react';
+import './nasa_styles.css';
 
 const NasaPhoto = (props) => {
-
-    // const [nasaImg] = props;
-
     return(
-        <div> 
-            Nasa Photo Component
-            {/* Nasa  Image should display
-                Date of the photo taken
-                Image Url
-                Title of the photo
-            */
-            }
+        <div className="nasaComponent"> 
+            <h1>{props.nasaImg.title}</h1>
+            <img 
+                src={props.nasaImg.url} 
+                alt={props.nasaImg.title} />
         </div>
     )
 }
