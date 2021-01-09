@@ -4,11 +4,11 @@ import './nasa_styles.css';
 
 const NasaPhoto = (props) => {
     return(
-        <div className="nasaComponent"> 
+        <div> 
             <h1>{props.nasaImg.title}</h1>
             <img 
                 className='nasaImage'
-                src={props.nasaImg.hdurl} 
+                src={props.nasaImg.url} 
                 alt={props.nasaImg.title} />
             
             <NasaPhotoDescription nasaImg={props.nasaImg}/>
