@@ -1,11 +1,11 @@
 import React from 'react';
 import NasaPhoto from './nasa_photo.js';
-
+import { Card }from 'reactstrap';
 const Nasa = (props) => {
     return(
-        <div> 
+        <Card> 
            <NasaPhoto  nasaImg={props.nasaImg} /> 
-        </div>
+        </Card>
     )
 
 }

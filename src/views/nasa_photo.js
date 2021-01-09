@@ -1,18 +1,18 @@
 import React from 'react';
 import NasaPhotoDescription from './nasa_photoDesc.js';
+import { CardBody,  CardTitle } from 'reactstrap';
 import './nasa_styles.css';
 
 const NasaPhoto = (props) => {
     return(
-        <div className="nasaComponent"> 
-            <h1>{props.nasaImg.title}</h1>
+        <CardBody> 
+            <CardTitle>{props.nasaImg.title}</CardTitle>
             <img 
-                className='nasaImage'
-                src={props.nasaImg.hdurl} 
+                width="100%"
+                src={props.nasaImg.url} 
                 alt={props.nasaImg.title} />
-            
             <NasaPhotoDescription nasaImg={props.nasaImg}/>
-        </div>
+        </CardBody>
     )
 }
 
