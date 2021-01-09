@@ -6,9 +6,9 @@
 .nasaComponent {
     width: 50%;
     height: 100%;
-    padding: 15px 15px;
+    padding: 0px 50px;
     margin: 0px auto;
-    border: 2px solid green;
+    border: 10px solid black;
 }
 
 /* Nasa Image Styles */

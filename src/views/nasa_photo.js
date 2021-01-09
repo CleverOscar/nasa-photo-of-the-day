@@ -8,10 +8,10 @@ const NasaPhoto = (props) => {
             <h1>{props.nasaImg.title}</h1>
             <img 
                 className='nasaImage'
-                src={props.nasaImg.url} 
+                src={props.nasaImg.hdurl} 
                 alt={props.nasaImg.title} />
             
-            <NasaPhotoDescription nasaImg={props.nasaImg} />
+            <NasaPhotoDescription nasaImg={props.nasaImg}/>
         </div>
     )
 }
