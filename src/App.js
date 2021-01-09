@@ -8,7 +8,7 @@ import "./App.css";
 function App() {
 
   const [nasaImg, setNasaImg] = useState('')
-  console.log(nasaImg)
+  
   const fetchData = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=xRpeUnyvEDRmAApcSHEUfqjg6naHJUW8raV71s8D')
     .then(res => setNasaImg(res.data))

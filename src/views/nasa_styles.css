@@ -1,0 +1,19 @@
+/* Parent App Component Styles */
+
+
+/* Child Of Parent, Parent of Nasa View Components */
+
+.nasaComponent {
+    width: 50%;
+    height: 100%;
+    padding: 0px 50px;
+    margin: 0px auto;
+    border: 10px solid black;
+}
+
+/* Nasa Image Styles */
+
+.nasaImage {
+    width: 100%;
+    height: 50%;
+}
