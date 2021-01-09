@@ -6,6 +6,14 @@ import "./App.css";
 
 // NASA API https://api.nasa.gov/planetary/apod?api_key=xRpeUnyvEDRmAApcSHEUfqjg6naHJUW8raV71s8D
 
+  const WrappedDiv = styled.div`
+    width: 50%;
+    heiht: 100%;
+    padding: 0px 25px;
+    margin: 0px auto;
+    border: 4px solid black;  
+  `
+
 function App() {
 
   const [nasaImg, setNasaImg] = useState('')
@@ -21,20 +29,11 @@ function App() {
 
   }, [])
 
-  const WrappedDiv = styled.div`
-    width: 50%;
-    heiht: 100%;
-    padding: 0px 50px;
-    margin: 0px auto;
-    border: 10px solid black;  
-  `
-
   return (
     <div className="App">
       <WrappedDiv> 
         <Nasa nasaImg={nasaImg}/>  
       </WrappedDiv>
-      
     </div>
   );
 

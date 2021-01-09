@@ -1,11 +1,12 @@
 import React from 'react';
+import { CardText } from 'reactstrap';
 
 const NasaPhotoDescription = (props) => {
 
     return (
         <div> 
             <h3>Taken: {props.nasaImg.date}</h3>
-            <p>{props.nasaImg.explanation}</p>
+            <CardText>{props.nasaImg.explanation}</CardText>
         </div>
     )
 }
